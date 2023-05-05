@@ -30,6 +30,13 @@ SOONG_CONFIG_lineageGlobalVars += \
     camera_override_format_from_reserved \
     target_libcameraservice_ext_lib \
     target_surfaceflinger_udfps_lib \
+    target_health_charging_control_charging_path \
+    target_health_charging_control_charging_enabled \
+    target_health_charging_control_charging_disabled \
+    target_health_charging_control_deadline_path \
+    target_health_charging_control_supports_bypass \
+    target_health_charging_control_supports_deadline \
+    target_health_charging_control_supports_toggle \
     target_init_vendor_lib \
     camera_needs_client_info_defaults \
     target_camera_package_name \
@@ -60,6 +67,11 @@ define addVar
 endef
 
 # Set default values
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED ?= 1
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED ?= 0
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS ?= true
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE ?= false
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE ?= true
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_CAMERA_SERVICE_EXT_LIB ?= libcameraservice_ext_lib
 TARGET_INIT_VENDOR_LIB ?= vendor_init
@@ -94,6 +106,14 @@ SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUS
 SOONG_CONFIG_lineageGlobalVars_target_charge_rate_multiplier := $(TARGET_CHARGE_RATE_MULTIPLIER)
 SOONG_CONFIG_lineageGlobalVars_target_libcameraservice_ext_lib := $(TARGET_CAMERA_SERVICE_EXT_LIB)
 SOONG_CONFIG_lineageQcomVars_no_fm_firmware := $(TARGET_QCOM_NO_FM_FIRMWARE)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_enabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_disabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_deadline_path := $(TARGET_HEALTH_CHARGING_CONTROL_DEADLINE_PATH)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_bypass := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_deadline := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_toggle := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE)
+
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_lineageQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
