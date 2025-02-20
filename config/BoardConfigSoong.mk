@@ -35,6 +35,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     target_health_charging_control_deadline_path \
     target_health_charging_control_supports_bypass \
     target_health_charging_control_supports_deadline \
+    target_health_charging_control_supports_limit \
     target_health_charging_control_supports_toggle \
     target_init_vendor_lib \
     camera_needs_client_info_defaults \
@@ -75,6 +76,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED ?= 1
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED ?= 0
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS ?= true
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE ?= false
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT ?= false
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE ?= true
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_CAMERA_SERVICE_EXT_LIB ?= libcameraservice_ext_lib
@@ -115,6 +117,7 @@ SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_disabled 
 SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_deadline_path := $(TARGET_HEALTH_CHARGING_CONTROL_DEADLINE_PATH)
 SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_bypass := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS)
 SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_deadline := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE)
+SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_limit := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT)
 SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_toggle := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE)
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
 SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
