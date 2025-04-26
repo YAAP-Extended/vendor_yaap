@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
 $(foreach f,$(wildcard vendor/yaap/prebuilt/common/etc/init/*.rc),\
     $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
+# Credential storage
+PRODUCT_PACKAGES += \
+    android.software.credentials.prebuilt.xml
+
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
 
