@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "KeyboardNoNavigationBarOverlay",
+    name: "KeyboardNoNavigationBarOverlayVanilla",
     theme: "KeyboardNoNavigationBar",
     certificate: "platform",
     sdk_version: "current",

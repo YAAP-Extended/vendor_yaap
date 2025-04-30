@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "Launcher3NoHintOverlay",
+    name: "Launcher3NoHintOverlayVanilla",
     theme: "Launcher3NoHint",
     certificate: "platform",
     sdk_version: "current",

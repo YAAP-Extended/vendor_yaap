@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "NavigationBarNoHintOverlay",
+    name: "NavigationBarNoHintOverlayVanilla",
     theme: "NavigationBarNoHint",
     certificate: "platform",
     sdk_version: "current",

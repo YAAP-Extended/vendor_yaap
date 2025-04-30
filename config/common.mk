@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
     ThemePickerOverlayVanilla \
     KeyboardNoNavigationBarOverlay \
     NavigationBarNoHintOverlay \
-    Launcher3NoHintOverlay
+    Launcher3NoHintOverlayVanilla
 # Include LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay-vanilla/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay-vanilla/packages
