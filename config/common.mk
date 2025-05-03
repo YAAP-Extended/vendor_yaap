@@ -113,8 +113,8 @@ PRODUCT_PACKAGES += \
     OpenDeltaOverlayVanilla \
     SettingsProviderOverlayVanilla \
     ThemePickerOverlayVanilla \
-    KeyboardNoNavigationBarOverlay \
-    NavigationBarNoHintOverlay \
+    KeyboardNoNavigationBarOverlayVanilla \
+    NavigationBarNoHintOverlayVanilla \
     Launcher3NoHintOverlayVanilla
 # Include LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay-vanilla/dictionaries
