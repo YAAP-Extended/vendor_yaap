@@ -16,7 +16,7 @@ yaap: otapackage
 	@echo -e "	   +#+  +#+     +#+ +#+     +#+ +#+        "
 	@echo -e "	   #+#  #+#     #+# #+#     #+# #+#        "
 	@echo -e "	   ###  ###     ### ###     ### ###        "
-	@echo -e "		Yet Another AOSP Project			   "
+	@echo -e "	   Yet Another AOSP Extended Project	   "
 	@echo -e ""
 	@echo -e "zip: "$(YAAP_TARGET_PACKAGE)
 	@echo -e "sha256: `cat $(YAAP_TARGET_PACKAGE).sha256sum | cut -d ' ' -f 1`"
