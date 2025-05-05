@@ -4,7 +4,7 @@ GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
 NC="\033[0m"
 
-NON_OFFICIAL_TAG="HOMEMADE"
+NON_OFFICIAL_TAG="Homemade"
 
 findPayloadOffset() {
     build=$1
@@ -101,6 +101,6 @@ fi
         echo "}"
 } >> "${file_path}.json"
 
-device_code=$(echo "${file_name}" | cut -d'-' -f4)
+device_code=$(echo "${file_name}" | cut -d'-' -f5)
 mv "${file_path}.json" "${file_dir}/${device_code}.json"
 echo -e "${GREEN}Done generating ${YELLOW}${file_dir}/${device_code}.json${NC}"
