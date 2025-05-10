@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlay \
     KeyboardNoNavigationBarOverlay \
     NavigationBarNoHintOverlay \
-    Launcher3NoHintOverlay
+    Launcher3NoHintOverlay \
+    BlackThemeOverlay
 ifneq ($(TARGET_BUILD_GAPPS),true)
 PRODUCT_PACKAGES += \
     DialerOverlayVanilla \
@@ -115,7 +116,8 @@ PRODUCT_PACKAGES += \
     ThemePickerOverlayVanilla \
     KeyboardNoNavigationBarOverlayVanilla \
     NavigationBarNoHintOverlayVanilla \
-    Launcher3NoHintOverlayVanilla
+    Launcher3NoHintOverlayVanilla \
+    BlackThemeOverlayVanilla
 # Include LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay-vanilla/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/yaap/overlay-vanilla/packages
