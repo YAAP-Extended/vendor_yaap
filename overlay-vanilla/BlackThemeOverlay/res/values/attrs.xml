@@ -1,0 +1,8 @@
+<resources>
+    <attr name="colorAccent" format="color"/>
+    <attr name="colorPrimary" format="color"/>
+    <attr name="colorPrimaryDark" format="color"/>
+    <attr name="colorBackground" format="color"/>
+    <attr name="elevationOverlayEnabled" format="boolean"/>
+    <attr name="elevationOverlayColor" format="color"/>
+</resources>

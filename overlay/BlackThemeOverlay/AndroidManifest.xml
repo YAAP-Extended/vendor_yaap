@@ -10,6 +10,12 @@
     <overlay android:targetPackage="android"
         android:category="android.theme.customization.system_palette"
         android:priority="1"/>
+    <overlay android:targetPackage="com.android.settings"
+        android:category="android.theme.customization.system_palette"
+        android:priority="999"/>
+    <overlay android:targetPackage="com.android.systemui"
+        android:category="android.theme.customization.system_palette"
+        android:priority="999"/>
     <application
         android:label="@string/android_overlay_black"
         android:hasCode="false"/>

@@ -10,4 +10,6 @@
     <dimen name="navigation_bar_height_landscape">0dp</dimen>
     <!-- Width of the navigation bar when it is placed vertically on the screen -->
     <dimen name="navigation_bar_width">0dp</dimen>
+    <dimen name="config_navBarHandleHeight">0dp</dimen>
+    <dimen name="navigation_handle_height">0dp</dimen>
 </resources>
