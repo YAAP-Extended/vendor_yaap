@@ -208,7 +208,8 @@ $(call inherit-product, vendor/yaap/config/sepolicy.mk)
 
 ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
 PRODUCT_PACKAGES += \
-    FaceUnlock
+    FaceUnlock \
+    ParanoidSense
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
