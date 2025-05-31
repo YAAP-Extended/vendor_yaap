@@ -1,11 +1,12 @@
 //
-// SPDX-FileCopyrightText: 2024 The LineageOS Project
+// Copyright (C) 2023 ArrowOS
+//
 // SPDX-License-Identifier: Apache-2.0
 //
 
 runtime_resource_overlay {
     name: "BlackThemeOverlayVanilla",
-
-    theme: "BlackTheme",
     product_specific: true,
+    sdk_version: "current",
+    theme: "BlackTheme",
 }

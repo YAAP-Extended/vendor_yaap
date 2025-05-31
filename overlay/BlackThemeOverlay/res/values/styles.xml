@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@android:style/Theme.DeviceDefault.Dialog"/>
-    <style name="Theme.MaterialComponents.DayNight" parent="@android:style/Theme.DeviceDefault"/>
-    <style name="Theme.Panel" parent="@android:style/Theme.DeviceDefault.Panel"/>
-    <style name="Theme.Settings.HomeBase" parent="@android:style/Theme.DeviceDefault"/>
-    <style name="Theme.SubSettings.Base" parent="@android:style/Theme.DeviceDefault"/>
-</resources>
