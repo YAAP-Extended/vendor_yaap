@@ -37,6 +37,7 @@ fi
 file_path=$1
 file_dir=$(dirname "$file_path")
 file_name=$(basename "$file_path")
+device_code=$(echo "${file_name}" | cut -d'-' -f5)
 
 if ! [ -f "$file_path" ]; then
     echo -e "${RED}File does not exist${NC}"
@@ -101,6 +102,5 @@ fi
         echo "}"
 } >> "${file_path}.json"
 
-device_code=$(echo "${file_name}" | cut -d'-' -f5)
 mv "${file_path}.json" "${file_dir}/${device_code}.json"
 echo -e "${GREEN}Done generating ${YELLOW}${file_dir}/${device_code}.json${NC}"
