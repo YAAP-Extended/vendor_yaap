@@ -9,6 +9,9 @@
 	<!-- URL base to find the full zip sha256sum files, %s is replaced to be property_device value. -->
 	<string name="url_base_full_sum">https://sourceforge.net/projects/guidixproject/files/YAAEXP/stable/%s/vanilla/</string>
 
+	<!-- URL base suffix - Used only for download -->
+	<string name="url_base_suffix">/download</string>
+
 	<!-- the branch name to format URLs with -->
 	<string name="url_branch_name">vanilla-signed</string>
 </resources>
